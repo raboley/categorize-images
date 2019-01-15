@@ -1,0 +1,219 @@
+Detected text:ATTACHMENT
+Confidence: 99.18%
+Id: 0
+Type:LINE
+Detected text:WEAPON
+Confidence: 99.73%
+Id: 1
+Type:LINE
+Detected text:30
+Confidence: 97.87%
+Id: 2
+Type:LINE
+Detected text:40
+Confidence: 99.04%
+Id: 3
+Type:LINE
+Detected text:Crystaring
+Confidence: 93.74%
+Id: 4
+Type:LINE
+Detected text:EQUIP ODDOH
+Confidence: 88.69%
+Id: 5
+Type:LINE
+Detected text:L1
+Confidence: 93.87%
+Id: 6
+Type:LINE
+Detected text:R1
+Confidence: 97.72%
+Id: 7
+Type:LINE
+Detected text:WHp. 28 058,
+Confidence: 90.22%
+Id: 8
+Type:LINE
+Detected text:-Abs564516
+Confidence: 88.81%
+Id: 9
+Type:LINE
+Detected text:56056
+Confidence: 91.07%
+Id: 10
+Type:LINE
+Detected text:At 80 -mex
+Confidence: 80.45%
+Id: 11
+Type:LINE
+Detected text:Ed 99 mezx
+Confidence: 87.52%
+Id: 12
+Type:LINE
+Detected text:Sp 99 me " Customize"
+Confidence: 91.97%
+Id: 13
+Type:LINE
+Detected text:Mp 88 Mex Change attribute
+Confidence: 93.39%
+Id: 14
+Type:LINE
+Detected text:& attachment.
+Confidence: 98.05%
+Id: 15
+Type:LINE
+Detected text:WEAPON
+Confidence: 99.73%
+Id: 17
+Parent Id: 1
+Type:WORD
+Detected text:ATTACHMENT
+Confidence: 99.18%
+Id: 16
+Parent Id: 0
+Type:WORD
+Detected text:30
+Confidence: 97.87%
+Id: 18
+Parent Id: 2
+Type:WORD
+Detected text:40
+Confidence: 99.04%
+Id: 19
+Parent Id: 3
+Type:WORD
+Detected text:Crystaring
+Confidence: 93.74%
+Id: 20
+Parent Id: 4
+Type:WORD
+Detected text:EQUIP
+Confidence: 98.15%
+Id: 21
+Parent Id: 5
+Type:WORD
+Detected text:ODDOH
+Confidence: 79.23%
+Id: 22
+Parent Id: 5
+Type:WORD
+Detected text:L1
+Confidence: 93.87%
+Id: 23
+Parent Id: 6
+Type:WORD
+Detected text:R1
+Confidence: 97.72%
+Id: 24
+Parent Id: 7
+Type:WORD
+Detected text:WHp.
+Confidence: 95.16%
+Id: 25
+Parent Id: 8
+Type:WORD
+Detected text:28
+Confidence: 90.06%
+Id: 26
+Parent Id: 8
+Type:WORD
+Detected text:058,
+Confidence: 85.44%
+Id: 27
+Parent Id: 8
+Type:WORD
+Detected text:-Abs564516
+Confidence: 88.81%
+Id: 28
+Parent Id: 9
+Type:WORD
+Detected text:56056
+Confidence: 91.07%
+Id: 29
+Parent Id: 10
+Type:WORD
+Detected text:At
+Confidence: 97.40%
+Id: 30
+Parent Id: 11
+Type:WORD
+Detected text:80
+Confidence: 74.48%
+Id: 31
+Parent Id: 11
+Type:WORD
+Detected text:-mex
+Confidence: 69.46%
+Id: 32
+Parent Id: 11
+Type:WORD
+Detected text:Ed
+Confidence: 95.09%
+Id: 33
+Parent Id: 12
+Type:WORD
+Detected text:99
+Confidence: 96.26%
+Id: 34
+Parent Id: 12
+Type:WORD
+Detected text:mezx
+Confidence: 71.20%
+Id: 35
+Parent Id: 12
+Type:WORD
+Detected text:Sp
+Confidence: 96.15%
+Id: 36
+Parent Id: 13
+Type:WORD
+Detected text:99
+Confidence: 94.64%
+Id: 37
+Parent Id: 13
+Type:WORD
+Detected text:" Customize"
+Confidence: 97.80%
+Id: 39
+Parent Id: 13
+Type:WORD
+Detected text:me
+Confidence: 79.30%
+Id: 38
+Parent Id: 13
+Type:WORD
+Detected text:Mp
+Confidence: 98.67%
+Id: 40
+Parent Id: 14
+Type:WORD
+Detected text:88
+Confidence: 96.86%
+Id: 41
+Parent Id: 14
+Type:WORD
+Detected text:Mex
+Confidence: 74.62%
+Id: 42
+Parent Id: 14
+Type:WORD
+Detected text:Change
+Confidence: 99.57%
+Id: 43
+Parent Id: 14
+Type:WORD
+Detected text:attribute
+Confidence: 97.21%
+Id: 44
+Parent Id: 14
+Type:WORD
+Detected text:&
+Confidence: 99.34%
+Id: 45
+Parent Id: 15
+Type:WORD
+Detected text:attachment.
+Confidence: 96.76%
+Id: 46
+Parent Id: 15
+Type:WORD
