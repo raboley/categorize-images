@@ -1,9 +1,10 @@
 [
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Dagger",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 1,
+      "characterName": "Toan",
+      "weaponName": "Dagger",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -17,10 +18,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Baselard",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 2,
+      "characterName": "Toan",
+      "weaponName": "Baselard",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -34,10 +36,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Crysknife",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 3,
+      "characterName": "Toan",
+      "weaponName": "Crysknife",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -51,10 +54,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Gladius",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 4,
+      "characterName": "Toan",
+      "weaponName": "Gladius",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -68,10 +72,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Kitchen Knife",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 5,
+      "characterName": "Toan",
+      "weaponName": "Kitchen Knife",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -85,10 +90,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Bone Rapier",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 6,
+      "characterName": "Toan",
+      "weaponName": "Bone Rapier",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -102,10 +108,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Buster Sword",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 7,
+      "characterName": "Toan",
+      "weaponName": "Buster Sword",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -119,10 +126,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Chopper",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 8,
+      "characterName": "Toan",
+      "weaponName": "Chopper",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -136,10 +144,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Sand Breaker",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 9,
+      "characterName": "Toan",
+      "weaponName": "Sand Breaker",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -153,10 +162,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Sax",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 10,
+      "characterName": "Toan",
+      "weaponName": "Sax",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -170,10 +180,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Serpent Sword",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 11,
+      "characterName": "Toan",
+      "weaponName": "Serpent Sword",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -187,10 +198,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Small Sword",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 12,
+      "characterName": "Toan",
+      "weaponName": "Small Sword",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -204,10 +216,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Shamshir",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 13,
+      "characterName": "Toan",
+      "weaponName": "Shamshir",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -221,10 +234,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Antique Sword",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 14,
+      "characterName": "Toan",
+      "weaponName": "Antique Sword",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "",
@@ -238,10 +252,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Choora",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 15,
+      "characterName": "Toan",
+      "weaponName": "Choora",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "",
@@ -255,10 +270,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Claymore",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 16,
+      "characterName": "Toan",
+      "weaponName": "Claymore",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -272,10 +288,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Dusack",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 17,
+      "characterName": "Toan",
+      "weaponName": "Dusack",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -289,10 +306,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Evilcise",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 18,
+      "characterName": "Toan",
+      "weaponName": "Evilcise",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -306,10 +324,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Macho Sword",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 19,
+      "characterName": "Toan",
+      "weaponName": "Macho Sword",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -323,10 +342,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Tsukikage",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 20,
+      "characterName": "Toan",
+      "weaponName": "Tsukikage",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "",
@@ -340,10 +360,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Wise Owl Sword",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 21,
+      "characterName": "Toan",
+      "weaponName": "Wise Owl Sword",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -357,10 +378,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "7 Branch Sword",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 22,
+      "characterName": "Toan",
+      "weaponName": "7 Branch Sword",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -374,10 +396,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Aga's Sword",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 23,
+      "characterName": "Toan",
+      "weaponName": "Aga's Sword",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -391,10 +414,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Brave Ark",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 24,
+      "characterName": "Toan",
+      "weaponName": "Brave Ark",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -408,10 +432,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Cross Hinder",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 25,
+      "characterName": "Toan",
+      "weaponName": "Cross Hinder",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -425,10 +450,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Drain Seeker",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 26,
+      "characterName": "Toan",
+      "weaponName": "Drain Seeker",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -442,10 +468,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Heavens's Cloud",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 27,
+      "characterName": "Toan",
+      "weaponName": "Heavens's Cloud",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -459,10 +486,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Lamb's Sword",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 28,
+      "characterName": "Toan",
+      "weaponName": "Lamb's Sword",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -476,10 +504,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Maneater",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 29,
+      "characterName": "Toan",
+      "weaponName": "Maneater",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -493,10 +522,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Mardan Eins",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 30,
+      "characterName": "Toan",
+      "weaponName": "Mardan Eins",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -510,10 +540,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Sun Sword",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 31,
+      "characterName": "Toan",
+      "weaponName": "Sun Sword",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -527,10 +558,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Atlamilla Sword",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 32,
+      "characterName": "Toan",
+      "weaponName": "Atlamilla Sword",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -544,10 +576,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Big Bang",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 33,
+      "characterName": "Toan",
+      "weaponName": "Big Bang",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -561,10 +594,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Dark Cloud",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 34,
+      "characterName": "Toan",
+      "weaponName": "Dark Cloud",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -578,10 +612,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Mardan Twei",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 35,
+      "characterName": "Toan",
+      "weaponName": "Mardan Twei",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -595,10 +630,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "7th Heaven",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 36,
+      "characterName": "Toan",
+      "weaponName": "7th Heaven",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -612,10 +648,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Arise Mardan",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 37,
+      "characterName": "Toan",
+      "weaponName": "Arise Mardan",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -629,10 +666,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Chronicle 2",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 38,
+      "characterName": "Toan",
+      "weaponName": "Chronicle 2",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -646,10 +684,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Chronicle Sword",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 39,
+      "characterName": "Toan",
+      "weaponName": "Chronicle Sword",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -663,10 +702,11 @@
       }
     },
     {
-      "Character Name": "Toan",
-      "Weapon Name": "Sword Of Zeus",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 40,
+      "characterName": "Toan",
+      "weaponName": "Sword Of Zeus",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -680,10 +720,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Wooden Slingshot",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 41,
+      "characterName": "Xiao",
+      "weaponName": "Wooden Slingshot",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -697,10 +738,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Bandit Slingshot",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 42,
+      "characterName": "Xiao",
+      "weaponName": "Bandit Slingshot",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -714,10 +756,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Bone Slingshot",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 43,
+      "characterName": "Xiao",
+      "weaponName": "Bone Slingshot",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -731,10 +774,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Steel Slingshot",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 44,
+      "characterName": "Xiao",
+      "weaponName": "Steel Slingshot",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -748,10 +792,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Flamingo",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 45,
+      "characterName": "Xiao",
+      "weaponName": "Flamingo",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -765,10 +810,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Hardshooter",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 46,
+      "characterName": "Xiao",
+      "weaponName": "Hardshooter",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -782,10 +828,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Double Impact",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 47,
+      "characterName": "Xiao",
+      "weaponName": "Double Impact",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -799,10 +846,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Dragon's Y",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 48,
+      "characterName": "Xiao",
+      "weaponName": "Dragon's Y",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -816,10 +864,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Matador",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 49,
+      "characterName": "Xiao",
+      "weaponName": "Matador",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -833,10 +882,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Divine Beast Title",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 50,
+      "characterName": "Xiao",
+      "weaponName": "Divine Beast Title",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -850,10 +900,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Angel Shooter",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 51,
+      "characterName": "Xiao",
+      "weaponName": "Angel Shooter",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -867,10 +918,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Steve",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 52,
+      "characterName": "Xiao",
+      "weaponName": "Steve",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "Yes",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -884,10 +936,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Angel Gear",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 53,
+      "characterName": "Xiao",
+      "weaponName": "Angel Gear",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -901,10 +954,11 @@
       }
     },
     {
-      "Character Name": "Xiao",
-      "Weapon Name": "Super Steve",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 54,
+      "characterName": "Xiao",
+      "weaponName": "Super Steve",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -918,10 +972,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Mallet",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 55,
+      "characterName": "Goro",
+      "weaponName": "Mallet",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -935,10 +990,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Frozen Tuna",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 56,
+      "characterName": "Goro",
+      "weaponName": "Frozen Tuna",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -952,10 +1008,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Steel Hammer",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 57,
+      "characterName": "Goro",
+      "weaponName": "Steel Hammer",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "",
@@ -969,10 +1026,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Big Bucks Hammer",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 58,
+      "characterName": "Goro",
+      "weaponName": "Big Bucks Hammer",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -986,10 +1044,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Plate Hammer",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 59,
+      "characterName": "Goro",
+      "weaponName": "Plate Hammer",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1003,10 +1062,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Trial Hammer",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 60,
+      "characterName": "Goro",
+      "weaponName": "Trial Hammer",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1020,10 +1080,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Turtle Shell",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 61,
+      "characterName": "Goro",
+      "weaponName": "Turtle Shell",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -1037,10 +1098,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Battle Axe",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 62,
+      "characterName": "Goro",
+      "weaponName": "Battle Axe",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1054,10 +1116,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Magical Hammer",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 63,
+      "characterName": "Goro",
+      "weaponName": "Magical Hammer",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -1071,10 +1134,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Gaia Hammer",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 64,
+      "characterName": "Goro",
+      "weaponName": "Gaia Hammer",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1088,10 +1152,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Last Judgment",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 65,
+      "characterName": "Goro",
+      "weaponName": "Last Judgment",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "Yes",
         "Shipwreck": "Yes",
@@ -1105,10 +1170,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Satan's Ax",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 66,
+      "characterName": "Goro",
+      "weaponName": "Satan's Ax",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1122,10 +1188,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Inferno",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 67,
+      "characterName": "Goro",
+      "weaponName": "Inferno",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1139,10 +1206,11 @@
       }
     },
     {
-      "Character Name": "Goro",
-      "Weapon Name": "Tall Hammer",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 68,
+      "characterName": "Goro",
+      "weaponName": "Tall Hammer",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1156,10 +1224,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Gold Ring",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 69,
+      "characterName": "Ruby",
+      "weaponName": "Gold Ring",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1173,10 +1242,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Thorn Armlet",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 70,
+      "characterName": "Ruby",
+      "weaponName": "Thorn Armlet",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1190,10 +1260,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Bandit's Ring",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 71,
+      "characterName": "Ruby",
+      "weaponName": "Bandit's Ring",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1207,10 +1278,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Platinum Ring",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 72,
+      "characterName": "Ruby",
+      "weaponName": "Platinum Ring",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1224,10 +1296,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Crystal Ring",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 73,
+      "characterName": "Ruby",
+      "weaponName": "Crystal Ring",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1241,10 +1314,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Pockleful",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 74,
+      "characterName": "Ruby",
+      "weaponName": "Pockleful",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "Yes",
@@ -1258,10 +1332,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Fairy's Ring",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 75,
+      "characterName": "Ruby",
+      "weaponName": "Fairy's Ring",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1275,10 +1350,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Goddess's Ring",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 76,
+      "characterName": "Ruby",
+      "weaponName": "Goddess's Ring",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1292,10 +1368,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Athena's Armlet",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 77,
+      "characterName": "Ruby",
+      "weaponName": "Athena's Armlet",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1309,10 +1386,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Destruction Ring",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 78,
+      "characterName": "Ruby",
+      "weaponName": "Destruction Ring",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1326,10 +1404,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Satan's Ring",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 79,
+      "characterName": "Ruby",
+      "weaponName": "Satan's Ring",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1343,10 +1422,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Mobius Ring",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 80,
+      "characterName": "Ruby",
+      "weaponName": "Mobius Ring",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1360,10 +1440,11 @@
       }
     },
     {
-      "Character Name": "Ruby",
-      "Weapon Name": "Secret Armlet",
-      "Tier": 6,
-      "Obtained From": {
+      "weaponId": 81,
+      "characterName": "Ruby",
+      "weaponName": "Secret Armlet",
+      "tier": 6,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1377,10 +1458,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Fighting Stick",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 82,
+      "characterName": "Ungaga",
+      "weaponName": "Fighting Stick",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1394,10 +1476,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "5 ft. Nail",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 83,
+      "characterName": "Ungaga",
+      "weaponName": "5 ft. Nail",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1411,10 +1494,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Halberd",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 84,
+      "characterName": "Ungaga",
+      "weaponName": "Halberd",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1428,10 +1512,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Javelin",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 85,
+      "characterName": "Ungaga",
+      "weaponName": "Javelin",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1445,10 +1530,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "De Sanga",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 86,
+      "characterName": "Ungaga",
+      "weaponName": "De Sanga",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1462,10 +1548,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Partisan",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 87,
+      "characterName": "Ungaga",
+      "weaponName": "Partisan",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1479,10 +1566,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Scorpion",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 88,
+      "characterName": "Ungaga",
+      "weaponName": "Scorpion",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1496,10 +1584,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Cactus",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 89,
+      "characterName": "Ungaga",
+      "weaponName": "Cactus",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1513,10 +1602,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Mirage",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 90,
+      "characterName": "Ungaga",
+      "weaponName": "Mirage",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1530,10 +1620,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Terra Sword",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 91,
+      "characterName": "Ungaga",
+      "weaponName": "Terra Sword",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1547,10 +1638,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Babel's Spear",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 92,
+      "characterName": "Ungaga",
+      "weaponName": "Babel's Spear",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1564,10 +1656,11 @@
       }
     },
     {
-      "Character Name": "Ungaga",
-      "Weapon Name": "Hercule's Wrath",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 93,
+      "characterName": "Ungaga",
+      "weaponName": "Hercule's Wrath",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1581,10 +1674,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Machine Gun",
-      "Tier": 0,
-      "Obtained From": {
+      "weaponId": 94,
+      "characterName": "Osmond",
+      "weaponName": "Machine Gun",
+      "tier": 0,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1598,10 +1692,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Jackal",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 95,
+      "characterName": "Osmond",
+      "weaponName": "Jackal",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1615,10 +1710,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Snail",
-      "Tier": 1,
-      "Obtained From": {
+      "weaponId": 96,
+      "characterName": "Osmond",
+      "weaponName": "Snail",
+      "tier": 1,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1632,10 +1728,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Blessing Gun",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 97,
+      "characterName": "Osmond",
+      "weaponName": "Blessing Gun",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1649,10 +1746,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Swallow",
-      "Tier": 2,
-      "Obtained From": {
+      "weaponId": 98,
+      "characterName": "Osmond",
+      "weaponName": "Swallow",
+      "tier": 2,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1666,10 +1764,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Skunk",
-      "Tier": 3,
-      "Obtained From": {
+      "weaponId": 99,
+      "characterName": "Osmond",
+      "weaponName": "Skunk",
+      "tier": 3,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1683,10 +1782,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Hexa Blaster",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 100,
+      "characterName": "Osmond",
+      "weaponName": "Hexa Blaster",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1700,10 +1800,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "G Crusher",
-      "Tier": 4,
-      "Obtained From": {
+      "weaponId": 101,
+      "characterName": "Osmond",
+      "weaponName": "G Crusher",
+      "tier": 4,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1717,10 +1818,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Star Breaker",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 102,
+      "characterName": "Osmond",
+      "weaponName": "Star Breaker",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",
@@ -1734,10 +1836,11 @@
       }
     },
     {
-      "Character Name": "Osmond",
-      "Weapon Name": "Supernova",
-      "Tier": 5,
-      "Obtained From": {
+      "weaponId": 103,
+      "characterName": "Osmond",
+      "weaponName": "Supernova",
+      "tier": 5,
+      "obtainedFrom": {
           "Divine Beast Cave": "",
         "Wise Owl Forest": "",
         "Shipwreck": "",

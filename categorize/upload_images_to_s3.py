@@ -12,21 +12,21 @@ s3 = boto3.resource('s3')
 
 # Upload a new file
 def uploadfile(bucket, upload_file_full_path, local_filepath):
-        """Uploads a file to an s3 bucket from a local computer
+    """Uploads a file to an s3 bucket from a local computer
 
-        Parameters
-        ----------
-        bucket : str
-                the string bucket name of the bucket to upload to
+    Parameters
+    ----------
+    bucket : str
+            the string bucket name of the bucket to upload to
 
-        print_cols : bool, optional
-        A flag used to print the columns to the console (default is False)
+    print_cols : bool, optional
+    A flag used to print the columns to the console (default is False)
 
-        Returns
-        -------
-        list
-        a list of strings representing the header columns
-        """
+    Returns
+    -------
+    list
+    a list of strings representing the header columns
+    """
     
     data = open(local_filepath, 'rb')
     s3.Bucket(bucket).put_object(Key=upload_file_full_path, Body=data)

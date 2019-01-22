@@ -1,16 +1,14 @@
 import json
-import find_in_json
-
-find = find_in_json
+from .find_in_json import find_value_by_id, has_text
         
 def image_is_weapon_stat_screen(source_text):
-    if find.has_text(source_text=source_text, find_text='ATTACHMENT'):
+    if has_text(source_text=source_text, find_text='ATTACHMENT'):
         return True
     else:
         return False
         
-def set_weapon_name(source_text, id=4):
-    raw_weapon_name = find.find_value_by_id(source_text=source_text, id=id)
+def get_weapon_name(source_text, id=4):
+    raw_weapon_name = find_value_by_id(source_text=source_text, id=id)
     final_weapon_name = raw_weapon_name.split('+')[0]
     return final_weapon_name
 

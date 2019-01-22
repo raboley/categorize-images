@@ -3,12 +3,11 @@
 
 import boto3
 import json
-import get_basename
-import upload_images_to_s3
+from .get_basename import path_basename
 
 s3 = boto3.resource('s3')
 def create_json_fullpath(foldertosavein ='./picture_text', photo='Ruby_Crystal_Ring_Stats.jpg'):
-    filebasename = get_basename.path_basename(photo)
+    filebasename = path_basename(photo)
     final_path = foldertosavein + '/' + filebasename + '.json'
     return final_path
 
