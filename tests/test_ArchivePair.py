@@ -59,5 +59,12 @@ class test_archive_pair(unittest.TestCase):
         self.assertEqual('test_value2', pair['value'])
         self.assertEqual('test_key2', pair['key'])
 
+    def test_doesnt_add_a_pair_if_it_already_exists(self):
+        key = 'test_key'
+        self.pair.set_pair(key,'test_value')
+        self.pair.set_pair(key,'test_value')
+        pair = self.pair.read_pair_file()
+        self.assertEqual(len(pair), 1)
+
 if __name__ == '__main__':
     unittest.main()
