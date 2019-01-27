@@ -6,58 +6,81 @@ from. find_in_json import get_json
 from .image_text_decider import determine_picture_type
 from .is_weapon_stat_screen import image_is_weapon_stat_screen, get_weapon_name, determine_character, write_weapon_map_to_file, get_weapon_list
 from .read_file_s3 import read_file_s3
+from .retry_wrapper import retry
 import json
 
-event = {
-    "bucket_name": "dark-cloud-bucket2",
-    "bucket_image_folder_path": "new_images/",
-    "bucket_text_folder_path": "new_text/",
-    "photo_extension": ".jpg",
-    "local_text_folder": "./picture_text",
-    "image_key": ""
-}
-
-def get_image_name(event, args):
+def get_image_name(event, args, file_object, output_file_object):
     # Create json text from image on s3
     bucket_name = event['Records'][0]['s3']['bucket']['name']
     file_key = event['Records'][0]['s3']['object']['key']
     local_text_folder = args['local_text_folder']
+    
+    if not file_object.check_existence(key=file_key):
+        raise ValueError('Error ' + file_key + 'does not exist or we dont have permissions to view it')
+
     local_json_path = write_image_json_to_file(foldertosavein=local_text_folder, bucket=bucket_name, photo=file_key)
     
     # Upload json file to s3
     bucket_text_folder_path = args['bucket_text_folder_path']
     bucket_text_fullpath = bucket_text_folder_path + path_basename(file_key) + ".json"
     uploadfile(bucket=bucket_name, upload_file_full_path=bucket_text_fullpath, local_filepath=local_json_path)
-
+    
+    # get the parent folder of the image    
+    key_folder = file_object.get_parent_folder_name(file_key)
+    
     # Determine image type based on Json
     json_data = get_json(local_json_path)
     picture_type = determine_picture_type(json_data)
 
-    if picture_type == 'stat_screen':
+
+
+    if picture_type == 'Stat':
         # get the list of weapons
 
         ## Read the list
-        weapon_mapping_file = args['weapon_mapping_file']
-        raw_json = read_file_s3(bucket_name, weapon_mapping_file)
-        weapon_list_json = json.loads(raw_json)
-        ## Maybe abstract the reading
-
+        weapon_list_json = file_object.read_json_file(key=args['weapon_mapping_file'])
         ## parse the weapons file
         weapons_list = get_weapon_list(weapon_list_json)
-        
         # get the weapon name
         weapon_name = get_weapon_name(source_text=json_data, id=4, weapon_list=weapons_list)
         
         # get the character name
         character_name = determine_character(weapon_name, weapon_list_json)
 
-        # Put folder path, weapon name, character name combo up in s3
         
 
+        # Put folder path, weapon name, character name combo up in s3
+        date_folder_mapping = {"key":key_folder, "weapon name": weapon_name, "character name": character_name}
+        file_object.append_json_file(key=args['datefolder_character_weapon_mapping_file'], json_data=date_folder_mapping)
+
+    this_folder_mappings = get_folder_mappings(key=args['datefolder_character_weapon_mapping_file'], file_object=file_object, key_folder=key_folder)
+    if this_folder_mappings:
+        
+        if picture_type == 'Side':
+            side_one_name = this_folder_mappings["character name"] + '_' + this_folder_mappings["weapon name"] + '_Side1.jpg'
+            picture_type = determine_side_number(side_one_key=side_one_name,output_file_object=output_file_object)
+        
         # create the raw file name
-        raw_filename = character_name + '_' + weapon_name + '_' + picture_type + '.jpg'
+        raw_filename = this_folder_mappings["character name"] + '_' + this_folder_mappings["weapon name"] + '_' + picture_type + '.jpg'
         
         # replace all spaces with underscores
         final_filename = raw_filename.replace(" ", "_")
         return final_filename
+
+@retry(retry_count=6, delay=5, allowed_exceptions=ValueError)
+def get_folder_mappings(key, file_object, key_folder):
+    # get the file name elements
+    full_character_weapon_mapping_json = file_object.read_json_file(key=key)
+    this_folder_mappings = next((item for item in full_character_weapon_mapping_json if item["key"] == key_folder), 'unknown')
+    if this_folder_mappings == 'unknown':
+        raise ValueError(key_folder + " does not have a matching weapon name, character yet")
+    else:
+        return this_folder_mappings
+
+def determine_side_number(side_one_key,output_file_object):
+    # check if Side1 exists
+    if output_file_object.check_existence(key=side_one_key):
+        return 'Side2'
+    else:
+        return 'Side1'
 

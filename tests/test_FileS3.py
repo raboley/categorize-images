@@ -53,6 +53,11 @@ class test_FileS3(unittest.TestCase):
         appended_json = self.File_object.read_json_file(key=key)
         self.assertEqual(appended_json, test_data)
 
+    def test_can_return_parent_folder_name(self):
+        full_path = 'archive/2019-01-18_13-53-00/Dvndh6DUYAAF1rM.jpg'
+        parent_name = self.File_object.get_parent_folder_name(full_path)
+        self.assertEqual(parent_name, '2019-01-18_13-53-00')
+
     def test_z_teardown_does_remove_items(self):
         self.delete_s3_objects(bucket_name=self.bucket,output_folder=self.output_folder)
         pushed_objects = categorize.get_matching_s3_keys(bucket=self.bucket, prefix=self.output_folder)

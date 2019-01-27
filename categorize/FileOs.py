@@ -2,6 +2,16 @@ import os
 import json
 from shutil import copyfile
 
+# -*- coding: utf-8 -*-
+import os
+import ntpath
+
+
+def path_basename(path):
+    trash, tail = ntpath.split(path)
+    filebasename = os.path.splitext(tail)[0]
+    return filebasename
+
 class FileOs():
     
     def get_file(self):
@@ -41,4 +51,10 @@ class FileOs():
     
     def get_base_path(self):
         return self._base_path
+
+    def get_parent_folder_name(self, key):
+        head, tail = ntpath.split(key)
+        trash, parent_folder = ntpath.split(head)
+        return parent_folder
+
 

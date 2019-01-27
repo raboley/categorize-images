@@ -18,9 +18,11 @@ def rekognize_image_json(bucket='dark-cloud-bucket2', photo='Ruby_Crystal_Ring_S
     textDetections=response['TextDetections']
     return textDetections
 
-def write_image_json_to_file(foldertosavein ='./picture_text', bucket='dark-cloud-bucket2', photo='Ruby_Crystal_Ring_Stats.jpg'):
+def write_image_json_to_file(foldertosavein ='./categorize/picture_text', bucket='dark-cloud-bucket', photo='Ruby_Crystal_Ring_Stats.jpg'):
     final_path = create_json_fullpath(foldertosavein=foldertosavein,photo=photo)
     data = rekognize_image_json(bucket=bucket, photo=photo)
     with open(final_path, 'w') as outfile:
         json.dump(data, outfile, ensure_ascii=False, indent=4)
     return final_path
+
+#write_image_json_to_file(photo='archive/2019-01-18_13-53-00/DwJ6v8fUcAAa-Ov.jpg')

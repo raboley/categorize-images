@@ -85,5 +85,10 @@ class test_FileOs(unittest.TestCase):
         self.file_obj.copy_file(source_path, dest_path)
         self.assertTrue(os.path.isfile(full_dest_path))
 
+    def test_can_return_parent_folder_name(self):
+        full_path = 'archive/2019-01-18_13-53-00/Dvndh6DUYAAF1rM.jpg'
+        parent_name = self.file_obj.get_parent_folder_name(full_path)
+        self.assertEqual(parent_name, '2019-01-18_13-53-00')
+
 if __name__ == "__main__":
     unittest.main()
