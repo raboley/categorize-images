@@ -41,3 +41,4 @@ class FileOs():
     
     def get_base_path(self):
         return self._base_path
+

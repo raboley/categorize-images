@@ -1,0 +1,31 @@
+import boto3
+import json
+from .FileOs import FileOs
+
+class FileS3(FileOs):
+
+    def read_json_file(self, key):
+        body = self.read_file(key=key)
+        return json.loads(body)
+
+    def read_file(self, key):
+        client = boto3.client('s3')
+        s3_object = client.get_object(Bucket=self.bucket_name, Key=key)
+        body = s3_object['Body']
+        return body.read()
+
+    def append_json_file(self, key, json_data):
+        original_json = self.read_json_file(key=key)
+        appended_json = original_json.append(json_data)
+        self.put_json_file(key=key, json_data=appended_json)
+
+    def put_json_file(self, key, json_data):
+        binary_data = json.dumps(json_data).encode('utf-8')
+        self.put_file(key=key, binary_data=binary_data)
+
+    def put_file(self, key, binary_data):
+        self.client.put_object(Body=binary_data, Bucket=self.bucket_name, Key=key)
+
+    def __init__(self, bucket):
+        self.client = boto3.client('s3')
+        self.bucket_name = bucket

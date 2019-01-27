@@ -52,8 +52,7 @@ def get_image_name(event, args):
         character_name = determine_character(weapon_name, weapon_list_json)
 
         # Put folder path, weapon name, character name combo up in s3
-        #client = boto3.client('s3')
-        #client.put_object(Body=more_binary_data, Bucket='my_bucket_name', Key='my/key/including/anotherfilename.txt')
+        
 
         # create the raw file name
         raw_filename = character_name + '_' + weapon_name + '_' + picture_type + '.jpg'
