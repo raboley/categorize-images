@@ -40,8 +40,19 @@ class FileS3(FileOs):
     def put_file(self, key, binary_data):
         self.client.put_object(Body=binary_data, Bucket=self.bucket_name, Key=key)
 
+    def copy_file(self, source_path, dest_path):
+        copy_source = {
+            'Bucket': self.bucket_name,
+            'Key': source_path
+            }
+        # for now setting them to be the same
+        other_bucket = self.bucket_name
+        bucket = self.s3.Bucket(other_bucket)
+        bucket.copy(copy_source, dest_path)
+
     def __init__(self, bucket):
         self.client = boto3.client('s3')
         self.bucket_name = bucket
+        self.s3 = boto3.resource('s3')
 
 

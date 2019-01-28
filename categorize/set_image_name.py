@@ -8,25 +8,32 @@ from .is_weapon_stat_screen import image_is_weapon_stat_screen, get_weapon_name,
 from .read_file_s3 import read_file_s3
 from .retry_wrapper import retry
 import json
+import os
 
-def get_image_name(event, args, file_object, output_file_object):
+def copy_image_to_folder_with_categorized_name(args, file_object, output_file_object):
+    categorized_image_key = get_image_name(args, file_object, output_file_object)
+    destination_path = os.path.join(args["output_folder_name"], categorized_image_key)
+    image_key = args["image_key"]
+    file_object.copy_file(source_path=image_key, dest_path=destination_path)
+
+def get_image_name(args, file_object, output_file_object):
     # Create json text from image on s3
-    bucket_name = event['Records'][0]['s3']['bucket']['name']
-    file_key = event['Records'][0]['s3']['object']['key']
+    bucket_name = args["bucket_name"]
+    image_key = args["image_key"]
     local_text_folder = args['local_text_folder']
     
-    if not file_object.check_existence(key=file_key):
-        raise ValueError('Error ' + file_key + 'does not exist or we dont have permissions to view it')
+    if not file_object.check_existence(key=image_key):
+        raise ValueError('Error ' + image_key + 'does not exist or we dont have permissions to view it')
 
-    local_json_path = write_image_json_to_file(foldertosavein=local_text_folder, bucket=bucket_name, photo=file_key)
+    local_json_path = write_image_json_to_file(foldertosavein=local_text_folder, bucket=bucket_name, photo=image_key)
     
     # Upload json file to s3
     bucket_text_folder_path = args['bucket_text_folder_path']
-    bucket_text_fullpath = bucket_text_folder_path + path_basename(file_key) + ".json"
+    bucket_text_fullpath = bucket_text_folder_path + path_basename(image_key) + ".json"
     uploadfile(bucket=bucket_name, upload_file_full_path=bucket_text_fullpath, local_filepath=local_json_path)
     
     # get the parent folder of the image    
-    key_folder = file_object.get_parent_folder_name(file_key)
+    key_folder = file_object.get_parent_folder_name(image_key)
     
     # Determine image type based on Json
     json_data = get_json(local_json_path)

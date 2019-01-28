@@ -57,6 +57,12 @@ class test_FileS3(unittest.TestCase):
         full_path = 'archive/2019-01-18_13-53-00/Dvndh6DUYAAF1rM.jpg'
         parent_name = self.File_object.get_parent_folder_name(full_path)
         self.assertEqual(parent_name, '2019-01-18_13-53-00')
+    
+    def test_copy_file_will_copy_file_with_new_name(self):
+        source_path = "archive/2019-01-27_18-20-31/DwJ6vY_VAAIexyj.jpg"
+        dest_path = self.output_folder + 'weapons/Toan_Choora_Stats.jpg'
+        self.File_object.copy_file(source_path=source_path, dest_path=dest_path)
+        self.assertTrue(self.File_object.check_existence(dest_path))
 
     def test_z_teardown_does_remove_items(self):
         self.delete_s3_objects(bucket_name=self.bucket,output_folder=self.output_folder)
@@ -66,6 +72,8 @@ class test_FileS3(unittest.TestCase):
         for obj in pushed_objects:
             count+= 1
         self.assertEqual(int(0), count)
+
+
 
 if __name__ == "__main__":
     unittest.main()
