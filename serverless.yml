@@ -21,14 +21,29 @@ provider:
     - Effect: "Allow"
       Action:
         - "rekognition:*"
-      Resource: "*"   
+      Resource: "*"
+    - Effect: "Allow"
+      Action:
+        - "s3:PutBucketNotification"
+      Resource:
+        Fn::Join:
+          - ""
+          - - "arn:aws:s3:::dark-cloud-bucket or *"
+
+package:
+ include:
+   - categorize/**
 
 functions:
   imageAnalysis:
-    handler: handler.categorize_and_move_image
+    handler: categorize.categorize_and_move_image
     events:
-      - s3:
-          bucket: ${self:custom.bucket}
-          event: s3:ObjectCreated:*
+      - existings3:
+          bucket: dark-cloud-bucket
+          events: 
+            - s3:ObjectCreated:*
           rules:
             - prefix: archive/
+plugins:
+  - serverless-python-requirements
+  - serverless-plugin-existing-s3
