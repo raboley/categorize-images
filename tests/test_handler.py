@@ -1,19 +1,34 @@
 import unittest
 from testfixtures import tempdir, compare, TempDirectory
+import boto3
 
 from context import categorize
+FileS3 = categorize.FileS3
 
 class test_set_image_name(unittest.TestCase):
     """
     Ensure that we can set the image name correctly with weapon, character name and type
     """
     def setUp(self):
-        self.d = TempDirectory()
-        
-    def tearDown(self):
-        self.d.cleanup
+        self.bucket = 'dark-cloud-bucket'
+        self.File_object = FileS3(bucket=self.bucket)
+        self.output_folder = "__test/weapons"
 
-    def test_get_image_name_when_is_stat_screen(self):
+    def tearDown(self):
+        self.delete_s3_objects(bucket_name=self.bucket,output_folder=self.output_folder)
+        
+
+    def delete_s3_objects(self, bucket_name, output_folder):
+        s3 = boto3.resource('s3')
+        objects_to_delete = s3.meta.client.list_objects(Bucket=bucket_name, Prefix=output_folder)
+
+        delete_keys = {'Objects' : []}
+        delete_keys['Objects'] = [{'Key' : k} for k in [obj['Key'] for obj in objects_to_delete.get('Contents', [])]]
+        if delete_keys['Objects']:
+            s3.meta.client.delete_objects(Bucket=bucket_name, Delete=delete_keys)
+
+
+    def test_categorize_and_move_image_does_create_the_image(self):
         event = {
         "Records": [
             {
@@ -58,14 +73,18 @@ class test_set_image_name(unittest.TestCase):
             "image_key": event['Records'][0]['s3']['object']['key'],
             "bucket_image_folder_path": "new_images/",
             "bucket_text_folder_path": "new_text/",
-            "local_text_folder": self.d.path,
+            "local_text_folder": "/temp/",
             "weapon_mapping_file": "mappings/all_weapons.json",
             "datefolder_character_weapon_mapping_file": "__test/mappings/datefolder_character_weapon_mapping_file.json",
             "output_folder_name": "__test/weapons",
             "output_bucket_name": "dark-cloud-bucket"
         }
 
-        file_object =  categorize.FileS3(event['Records'][0]['s3']['bucket']['name'])
-        output_file_object = categorize.FileS3(args["output_bucket_name"])
-        image_name = categorize.get_image_name(event, args, file_object, output_file_object)
-        self.assertEqual(image_name, 'Toan_Choora_Stat.jpg')
+        # file_object =  categorize.FileS3(event['Records'][0]['s3']['bucket']['name'])
+        output_file_object = categorize.FileS3(event['Records'][0]['s3']['bucket']['name'])
+        categorize.categorize_and_move_image(event, '')
+        test_full_path = args["output_folder_name"] + '/Toan_Choora_Stat.jpg'
+        self.assertTrue(output_file_object.check_existence(test_full_path))
+
+if __name__ == '__main__':
+    unittest.main()

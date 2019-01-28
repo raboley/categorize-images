@@ -15,29 +15,28 @@ def copy_image_to_folder_with_categorized_name(args, file_object, output_file_ob
     destination_path = os.path.join(args["output_folder_name"], categorized_image_key)
     image_key = args["image_key"]
     file_object.copy_file(source_path=image_key, dest_path=destination_path)
+    return "copied: " + image_key + " to: " + destination_path
 
 def get_image_name(args, file_object, output_file_object):
     # Create json text from image on s3
     bucket_name = args["bucket_name"]
     image_key = args["image_key"]
-    local_text_folder = args['local_text_folder']
     
     if not file_object.check_existence(key=image_key):
         raise ValueError('Error ' + image_key + 'does not exist or we dont have permissions to view it')
 
-    local_json_path = write_image_json_to_file(foldertosavein=local_text_folder, bucket=bucket_name, photo=image_key)
+    image_json = rekognize_image_json(bucket=bucket_name, photo=image_key)
     
     # Upload json file to s3
     bucket_text_folder_path = args['bucket_text_folder_path']
     bucket_text_fullpath = bucket_text_folder_path + path_basename(image_key) + ".json"
-    uploadfile(bucket=bucket_name, upload_file_full_path=bucket_text_fullpath, local_filepath=local_json_path)
+    output_file_object.put_json_file(bucket_text_fullpath, image_json)
     
     # get the parent folder of the image    
     key_folder = file_object.get_parent_folder_name(image_key)
     
     # Determine image type based on Json
-    json_data = get_json(local_json_path)
-    picture_type = determine_picture_type(json_data)
+    picture_type = determine_picture_type(image_json)
 
 
 
@@ -49,7 +48,7 @@ def get_image_name(args, file_object, output_file_object):
         ## parse the weapons file
         weapons_list = get_weapon_list(weapon_list_json)
         # get the weapon name
-        weapon_name = get_weapon_name(source_text=json_data, id=4, weapon_list=weapons_list)
+        weapon_name = get_weapon_name(source_text=image_json, id=4, weapon_list=weapons_list)
         
         # get the character name
         character_name = determine_character(weapon_name, weapon_list_json)

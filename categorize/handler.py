@@ -1,23 +1,26 @@
 import json
-import download_twitter_photos
+from .set_image_name import copy_image_to_folder_with_categorized_name
+from .FileS3 import FileS3
 
 
-def search_for_new_tweets(event, context):
+def categorize_and_move_image(event, context):
     
-    default_event = {
-        "config": "./config.cfg",
-        "username_or_hashtag": "cloud_images",
-        "hashtag": "",
-        "num": "5",
-        "retweets": "False",
-        "replies": "False",
-        "output_folder": "archive/",
-        "bucket": "dark-cloud-bucket",
-        "download_lambda_name": "fetch-file-and-store-in-s3-dark-cloud-dev-save"
+    args = {
+        "bucket_name": event['Records'][0]['s3']['bucket']['name'],
+        "image_key": event['Records'][0]['s3']['object']['key'],
+        "bucket_image_folder_path": "new_images/",
+        "bucket_text_folder_path": "new_text/",
+        "local_text_folder": "/temp/",
+        "weapon_mapping_file": "mappings/all_weapons.json",
+        "datefolder_character_weapon_mapping_file": "__test/mappings/datefolder_character_weapon_mapping_file.json",
+        "output_folder_name": "__test/weapons",
+        "output_bucket_name": "dark-cloud-bucket"
     }
 
-    parsed_event = parse_event(default_event=default_event,event=event)
-    output = download_twitter_photos.main(arguments=parsed_event)
+    file_object =  FileS3(args['bucket_name'])
+    output_file_object = FileS3(args["output_bucket_name"])
+
+    output = copy_image_to_folder_with_categorized_name(args, file_object, output_file_object)
     
     body = {
         "message": "Go Serverless v1.0! Your function executed successfully!",

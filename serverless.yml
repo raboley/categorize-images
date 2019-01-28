@@ -1,0 +1,34 @@
+service: rekognition-analysis-s3-image
+
+frameworkVersion: ">=1.10.0"
+
+custom:
+  bucket: dark-cloud-bucket
+
+provider:
+  name: aws
+  runtime: python3.6
+  memorySize: 512
+  timeout: 10
+  stage: dev
+  region: us-west-2
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: "*"
+    - Effect: "Allow"
+      Action:
+        - "rekognition:*"
+      Resource: "*"   
+
+functions:
+  imageAnalysis:
+    handler: handler.categorize_and_move_image
+    events:
+      - s3:
+          bucket: ${self:custom.bucket}
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: archive/
