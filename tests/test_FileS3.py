@@ -64,6 +64,20 @@ class test_FileS3(unittest.TestCase):
         self.File_object.copy_file(source_path=source_path, dest_path=dest_path)
         self.assertTrue(self.File_object.check_existence(dest_path))
 
+    def test_copy_file_will_copy_file_with_new_name_to_another_bucket(self):
+        source_path = "archive/2019-01-27_18-20-31/DwJ6vY_VAAIexyj.jpg"
+        dest_path = 'dark-cloud-bucket2:'+ self.output_folder + 'weapons/Toan_Choora_Stats.jpg'
+        other_bucket_dest = self.output_folder + 'weapons/Toan_Choora_Stats.jpg'
+        self.File_object.copy_file(source_path=source_path, dest_path=dest_path)
+        output_object = FileS3('dark-cloud-bucket2')
+        self.assertTrue(output_object.check_existence(other_bucket_dest))
+
+    def test_splits_bucket_and_path(self):
+        full_path = 'dark-cloud-bucket2:'+ self.output_folder + 'weapons/Toan_Choora_Stats.jpg'
+        bucket, output_path = self.File_object.split_bucket_path(full_path)
+        self.assertEqual(bucket, 'dark-cloud-bucket2')
+        self.assertEqual(output_path, self.output_folder + 'weapons/Toan_Choora_Stats.jpg')
+
     def test_z_teardown_does_remove_items(self):
         self.delete_s3_objects(bucket_name=self.bucket,output_folder=self.output_folder)
         pushed_objects = categorize.get_matching_s3_keys(bucket=self.bucket, prefix=self.output_folder)

@@ -45,10 +45,21 @@ class FileS3(FileOs):
             'Bucket': self.bucket_name,
             'Key': source_path
             }
-        # for now setting them to be the same
-        other_bucket = self.bucket_name
+        has_bucket = dest_path.rfind(':')
+        if has_bucket == -1:
+            other_bucket = self.bucket_name
+            output_path = dest_path
+        else:
+            other_bucket, output_path = self.split_bucket_path(dest_path)
         bucket = self.s3.Bucket(other_bucket)
-        bucket.copy(copy_source, dest_path)
+        bucket.copy(copy_source, output_path)
+
+    def split_bucket_path(self, full_bucket_and_output_path: str):
+        splits = full_bucket_and_output_path.split(':', 1)
+        bucket = splits[0]
+        output_path = splits[1]#.split(':', 1)[0]
+        return bucket, output_path
+
 
     def __init__(self, bucket):
         self.client = boto3.client('s3')

@@ -4,3 +4,5 @@ init:
 	source env/bin/activate
 test:
 	nosetests tests
+deploy-prod:
+	serverless deploy --stage prod --alias prod

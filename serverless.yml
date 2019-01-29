@@ -28,7 +28,7 @@ provider:
       Resource:
         Fn::Join:
           - ""
-          - - "arn:aws:s3:::dark-cloud-bucket or *"
+          - - "arn:aws:s3:::dark-cloud-bucket"
 
 package:
  include:
