@@ -6,3 +6,4 @@ test:
 	nosetests tests
 deploy-prod:
 	serverless deploy --stage prod --alias prod
+	sls s3deploy --stage prod

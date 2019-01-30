@@ -38,7 +38,7 @@ functions:
   imageAnalysis:
     handler: categorize.categorize_and_move_image
     events:
-      - existings3:
+      - existingS3:
           bucket: dark-cloud-bucket
           events: 
             - s3:ObjectCreated:*

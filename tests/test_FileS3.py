@@ -76,7 +76,7 @@ class test_FileS3(unittest.TestCase):
         full_path = 'dark-cloud-bucket2:'+ self.output_folder + 'weapons/Toan_Choora_Stats.jpg'
         bucket, output_path = self.File_object.split_bucket_path(full_path)
         self.assertEqual(bucket, 'dark-cloud-bucket2')
-        self.assertEqual(output_path, self.output_folder + 'weapons/Toan_Choora_Stats.jpg')
+        self.assertEqual(output_path, '__testing/weapons/Toan_Choora_Stats.jpg')
 
     def test_z_teardown_does_remove_items(self):
         self.delete_s3_objects(bucket_name=self.bucket,output_folder=self.output_folder)

@@ -13,7 +13,7 @@ def categorize_and_move_image(event, context):
         "local_text_folder": "/temp/",
         "weapon_mapping_file": "mappings/all_weapons.json",
         "datefolder_character_weapon_mapping_file": "__test/mappings/datefolder_character_weapon_mapping_file.json",
-        "output_folder_name": "dark-cloud-bucket2:/weapons",
+        "output_folder_name": "dark-cloud-bucket2:weapons/images",
         "output_bucket_name": "dark-cloud-bucket2"
     }
 

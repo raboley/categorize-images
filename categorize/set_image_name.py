@@ -40,7 +40,7 @@ def get_image_name(args, file_object, output_file_object):
 
 
 
-    if picture_type == 'Stat':
+    if picture_type == 'Stats':
         # get the list of weapons
 
         ## Read the list
