@@ -44,7 +44,9 @@ functions:
             - s3:ObjectCreated:*
           rules:
             - prefix: archive/
-
+    environment:
+      project: dark-cloud
+      stage: ${self:provider.stage}
 resources:
  Resources:
    NewResource:
