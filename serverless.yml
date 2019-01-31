@@ -3,7 +3,7 @@ service: rekognition-analysis-s3-image
 frameworkVersion: ">=1.10.0"
 
 custom:
-  bucket: dark-cloud-bucket
+  bucket: dark-cloud-bucket-${self:provider.stage}
 
 provider:
   name: aws
@@ -28,7 +28,7 @@ provider:
       Resource:
         Fn::Join:
           - ""
-          - - "arn:aws:s3:::dark-cloud-bucket"
+          - - "arn:aws:s3:::dark-cloud-bucket-${self:provider.stage}"
 
 package:
  include:
@@ -39,11 +39,19 @@ functions:
     handler: categorize.categorize_and_move_image
     events:
       - existingS3:
-          bucket: dark-cloud-bucket
+          bucket: dark-cloud-bucket-${self:provider.stage}
           events: 
             - s3:ObjectCreated:*
           rules:
             - prefix: archive/
+
+resources:
+ Resources:
+   NewResource:
+     Type: AWS::S3::Bucket
+     Properties:
+       BucketName: dark-cloud-bucket-${self:provider.stage}
+
 plugins:
   - serverless-python-requirements
   - serverless-plugin-existing-s3

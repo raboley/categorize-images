@@ -1,10 +1,17 @@
 import json
 from .set_image_name import copy_image_to_folder_with_categorized_name
 from .FileS3 import FileS3
-
+import os
 
 def categorize_and_move_image(event, context):
-    
+    STAGE = os.environ['stage']  
+    if STAGE == "dev":
+        output_bucket_name = event['Records'][0]['s3']['bucket']['name']
+        output_folder_name = output_bucket_name + ":weapons/images"
+    elif STAGE == "prod":
+        output_bucket_name = "dark-cloud-bucket2"
+        output_folder_name = "dark-cloud-bucket2:weapons/images"
+
     args = {
         "bucket_name": event['Records'][0]['s3']['bucket']['name'],
         "image_key": event['Records'][0]['s3']['object']['key'],
@@ -12,9 +19,9 @@ def categorize_and_move_image(event, context):
         "bucket_text_folder_path": "new_text/",
         "local_text_folder": "/temp/",
         "weapon_mapping_file": "mappings/all_weapons.json",
-        "datefolder_character_weapon_mapping_file": "__test/mappings/datefolder_character_weapon_mapping_file.json",
-        "output_folder_name": "dark-cloud-bucket2:weapons/images",
-        "output_bucket_name": "dark-cloud-bucket2"
+        "datefolder_character_weapon_mapping_file": "mappings/datefolder_character_weapon_mapping_file.json",
+        "output_folder_name": output_folder_name,
+        "output_bucket_name": output_bucket_name
     }
 
     file_object =  FileS3(args['bucket_name'])
