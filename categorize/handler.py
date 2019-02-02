@@ -7,10 +7,10 @@ def categorize_and_move_image(event, context):
     STAGE = os.environ['stage']  
     if STAGE == "dev":
         output_bucket_name = event['Records'][0]['s3']['bucket']['name']
-        output_folder_name = output_bucket_name + ":weapons/images"
+        output_folder_name = output_bucket_name + ":staging/weapons/images"
     elif STAGE == "prod":
         output_bucket_name = "dark-cloud-bucket2"
-        output_folder_name = "dark-cloud-bucket2:weapons/images"
+        output_folder_name = "dark-cloud-bucket2:staging/weapons/images"
 
     args = {
         "bucket_name": event['Records'][0]['s3']['bucket']['name'],
