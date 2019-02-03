@@ -48,7 +48,7 @@ def get_image_name(args, file_object, output_file_object):
         ## parse the weapons file
         weapons_list = get_weapon_list(weapon_list_json)
         # get the weapon name
-        weapon_name = get_weapon_name(source_text=image_json, id=4, weapon_list=weapons_list)
+        weapon_name = get_weapon_name(source_text=image_json, id=4, weapon_list=weapons_list, source_name=image_key)
         
         # get the character name
         character_name = determine_character(weapon_name, weapon_list_json)
@@ -73,7 +73,7 @@ def get_image_name(args, file_object, output_file_object):
         final_filename = raw_filename.replace(" ", "_")
         return final_filename
 
-@retry(retry_count=6, delay=5, allowed_exceptions=ValueError)
+@retry(retry_count=3, delay=1, allowed_exceptions=ValueError)
 def get_folder_mappings(key, file_object, key_folder):
     # get the file name elements
     full_character_weapon_mapping_json = file_object.read_json_file(key=key)

@@ -1,7 +1,8 @@
 init:
 	#pip install -r requirements.txt
 	bash setup.sh
-	source env/bin/activate
+	. env/bin/activate
+	npm i serverless-plugin-aws-alerts
 test:
 	nosetests tests
 deploy:

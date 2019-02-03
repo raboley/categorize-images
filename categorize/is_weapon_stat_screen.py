@@ -9,13 +9,20 @@ def image_is_weapon_stat_screen(source_text):
     else:
         return False
         
-def get_weapon_name(source_text, id=4, weapon_list=''):
-    raw_weapon_name = find_value_by_id(source_text=source_text, id=id)
-    final_weapon_name = raw_weapon_name.split('+')[0]
-    if weapon_list:
-        closest_weapon = difflib.get_close_matches(final_weapon_name, weapon_list, 1)
-        final_weapon_name = closest_weapon[0]
-    return final_weapon_name
+def get_weapon_name(source_text, id=4, weapon_list='', source_name=''):
+    ids_to_check = [4,3,5,2,6,1,7]
+    no_valid_weapon_name_error = 'Couldnt find a valid weapon name in: "'+ source_name + '" from any of these: '
+    for id in ids_to_check:
+        raw_weapon_name = find_value_by_id(source_text=source_text, id=id)
+        final_weapon_name = raw_weapon_name.split('+')[0]
+        if weapon_list:
+            closest_weapon = difflib.get_close_matches(final_weapon_name, weapon_list, 1)
+            if closest_weapon:
+                final_weapon_name = closest_weapon[0]
+                return final_weapon_name
+            else:
+                no_valid_weapon_name_error += final_weapon_name + ';'
+    raise ValueError(no_valid_weapon_name_error)
 
 def get_weapon_list(weapon_list_json):
     weapons = []
