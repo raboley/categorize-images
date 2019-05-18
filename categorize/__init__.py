@@ -10,3 +10,4 @@ from .set_image_name import get_image_name, copy_image_to_folder_with_categorize
 from .read_file_s3 import read_file_s3
 from .get_matching_s3_objects import get_matching_s3_keys
 from .handler import categorize_and_move_image
+from .get_matching_s3_objects import get_matching_s3_objects
